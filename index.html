@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ligue de Pickleball de Gracefield</title>
+<meta name="description" content="Ligue de pickleball amicale de Gracefield (Québec), pour tous les niveaux : horaire, tournois, résultats, classement et inscription.">
+<meta property="og:title" content="Ligue de Pickleball de Gracefield">
+<meta property="og:description" content="Jouer • S'amuser : une ligue dynamique au cœur de Gracefield pour tous les passionnés de pickleball !">
+<meta property="og:image" content="assets/img/apercu.jpg">
+<link rel="icon" href="assets/img/ic-calendrier.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+  <symbol id="i-fleche" viewBox="0 0 16 16"><path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.7V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.4H7.6V14h2.8v8z"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 6h18v12H3z M3 6l9 7 9-7"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+  <symbol id="i-horl" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-bulle" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3C6.5 3 2 6.9 2 11.6c0 2.6 1.4 5 3.7 6.6L5 22l4.2-2.3c.9.2 1.8.3 2.8.3 5.5 0 10-3.9 10-8.6S17.5 3 12 3z"/></symbol>
+  <symbol id="i-jeu" viewBox="0 0 24 24"><path fill="currentColor" d="M20 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM9 13H7v2H5v-2H3v-2h2V9h2v2h2zm6.5 2a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></symbol>
+</svg>
+
+<header class="barre">
+  <div class="conteneur">
+    <div class="lieu"><svg><use href="#i-pin"/></svg><span>Gracefield, Québec</span></div>
+    <nav class="nav" id="nav" aria-label="Menu principal">
+      <a href="#accueil" data-v="accueil">Accueil</a>
+      <a href="#apropos" data-v="apropos">À propos</a>
+      <a href="#inscription" data-v="inscription">Inscription</a>
+      <a href="#tournois" data-v="tournois">Tournois</a>
+      <a href="#horaire" data-v="horaire">Horaire</a>
+      <a href="#resultats" data-v="resultats">Résultats</a>
+      <a href="#communaute" data-v="communaute">Communauté</a>
+      <a href="#galerie" data-v="galerie">Galerie</a>
+      <a href="#faq" data-v="faq">FAQ</a>
+      <a href="#contact" data-v="contact">Nous joindre</a>
+    </nav>
+    <div class="droite">
+      <a class="social s-fb" href="#contact" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+      <a class="social s-yt" href="#contact" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-controls="nav"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= ACCUEIL ================= -->
+<div class="vue" id="v-accueil">
+  <section class="heros-img">
+    <img src="assets/img/hero.jpg" width="1536" height="410" alt="Ligue de Pickleball de Gracefield — Jouer • S'amuser. Une ligue dynamique au cœur de Gracefield pour tous les passionnés de pickleball !">
+    <a class="zone zone-cta" href="#inscription" aria-label="Inscrivez-vous dès maintenant"></a>
+  </section>
+  <section class="heros-m">
+    <img src="assets/img/logo.jpg" alt="Logo de la Ligue de Pickleball de Gracefield">
+    <div class="slogan">Jouer <span>•</span> S'amuser</div>
+    <p>Une ligue dynamique au cœur de Gracefield pour tous les passionnés de pickleball !</p>
+    <a class="pill lime" href="#inscription" style="font-size:1.1rem;padding:12px 22px">INSCRIVEZ-VOUS DÈS MAINTENANT <svg><use href="#i-fleche"/></svg></a>
+  </section>
+  <img class="strip-img" src="assets/img/strip.jpg" width="1536" height="93" alt="Une communauté passionnée · Tournois et événements · Pour tous les niveaux · Esprit d'équipe et plaisir garanti">
+  <section class="avantages" aria-hidden="true"><div class="conteneur">
+    <div class="av"><svg viewBox="0 0 56 56" fill="currentColor"><circle cx="28" cy="15" r="8"/><circle cx="12" cy="20" r="6"/><circle cx="44" cy="20" r="6"/><path d="M15 50V36a13 13 0 0 1 26 0v14z"/></svg>Une communauté passionnée</div>
+    <div class="av"><svg viewBox="0 0 56 56" fill="currentColor"><path d="M16 6h24v14a12 12 0 0 1-24 0z"/><rect x="25" y="31" width="6" height="10"/><path d="M17 50h22l-3-9H20z"/></svg>Tournois et événements</div>
+    <div class="av"><svg viewBox="0 0 56 56"><g transform="rotate(-40 28 28)"><rect x="17" y="4" width="22" height="30" rx="10" fill="none" stroke="currentColor" stroke-width="3.5"/><rect x="25" y="34" width="6" height="16" rx="2.5" fill="currentColor"/></g></svg>Pour tous les niveaux</div>
+    <div class="av"><svg viewBox="0 0 56 56" fill="currentColor"><path d="M28 48S6 35 6 20a11 11 0 0 1 22-3 11 11 0 0 1 22 3c0 15-22 28-22 28z"/></svg>Esprit d'équipe et plaisir garanti</div>
+  </div></section>
+
+  <main><div class="conteneur">
+    <div class="grille3">
+      <div class="carte">
+        <div class="carte-tete"><img src="assets/img/ic-calendrier.png" alt=""><h3>Événements à venir</h3><a class="lien" href="#horaire">Voir tous les événements →</a></div>
+        <div id="acc-evts"></div>
+      </div>
+      <div class="carte">
+        <div class="carte-tete"><img src="assets/img/ic-info.png" alt=""><h3>À propos de notre ligue</h3></div>
+        <div class="apropos-c">
+          <div><p class="js-desc"></p><a class="pill contour" href="#apropos">En savoir plus <svg><use href="#i-fleche"/></svg></a></div>
+          <div class="illu"><img src="assets/img/coureur.png" alt=""></div>
+        </div>
+      </div>
+      <div class="carte marine">
+        <div class="carte-tete"><img src="assets/img/ic-porte-voix.png" alt="" style="width:48px"><h3>Restez informé</h3></div>
+        <p>Abonnez-vous à notre infolettre pour recevoir les dernières nouvelles, les inscriptions et les résultats.</p>
+        <form id="f-infolettre">
+          <div class="champ-ic"><svg><use href="#i-mail"/></svg><input type="email" name="courriel" placeholder="Votre courriel" required></div>
+          <button class="btn-plein" type="submit">S'abonner</button>
+        </form>
+      </div>
+    </div>
+
+    <h2 class="section-titre">Quoi de neuf dans la ligue</h2>
+    <div class="grille3" style="grid-template-columns:1fr 1fr 1fr">
+      <div class="carte"><div class="carte-tete"><h3>📣 Annonces</h3></div><div id="liste-annonces"></div></div>
+      <div class="carte"><div class="carte-tete"><h3>🏓 Derniers résultats</h3><a class="lien" href="#resultats">Tous les résultats →</a></div><div id="acc-matchs"></div></div>
+      <div class="carte"><div class="carte-tete"><h3>🏆 Meneurs</h3><a class="lien" href="#resultats">Classement →</a></div><div id="acc-classement"></div></div>
+    </div>
+  </div></main>
+</div>
+
+<!-- ================= À PROPOS ================= -->
+<div class="vue" id="v-apropos">
+  <div class="tete-page"><div class="t-logo"></div><div class="t-filet"></div><div class="conteneur"><h1>À propos de la ligue</h1><p>Qui nous sommes, où et quand nous jouons.</p></div></div>
+  <main><div class="conteneur">
+    <div class="grille2">
+      <div class="carte">
+        <div class="carte-tete"><img src="assets/img/ic-info.png" alt=""><h3>Notre mission</h3></div>
+        <p class="js-desc" style="margin-top:0"></p>
+        <p>Nous voulons promouvoir le pickleball à Gracefield, favoriser le plaisir du jeu et bâtir une communauté active et accueillante, peu importe l'âge ou le niveau.</p>
+        <p><span class="badge lime">Plaisir avant tout</span> <span class="badge">Respect et franc-jeu</span> <span class="badge">Inclusion</span> <span class="badge">Esprit d'équipe</span></p>
+      </div>
+      <div class="carte">
+        <div class="carte-tete"><img src="assets/img/ic-calendrier.png" alt=""><h3>Informations pratiques</h3></div>
+        <div class="coord" id="ap-infos"></div>
+      </div>
+    </div>
+  </div></main>
+</div>
+
+<!-- ================= INSCRIPTION ================= -->
+<div class="vue" id="v-inscription">
+  <div class="tete-page"><div class="t-logo"></div><div class="t-filet"></div><div class="conteneur"><h1>Inscription</h1><p>Joignez-vous à la ligue : tous les niveaux sont les bienvenus !</p></div></div>
+  <main><div class="conteneur">
+    <div class="grille2" style="grid-template-columns:1.4fr 1fr">
+      <div class="carte">
+        <div class="carte-tete"><h3>Formulaire d'inscription</h3></div>
+        <div id="insc-externe" style="display:none">
+          <p>L'inscription se fait par un court formulaire en ligne.</p>
+          <a class="btn lime" id="lien-insc" target="_blank" rel="noopener">Remplir le formulaire d'inscription</a>
+        </div>
+        <form class="f" id="f-inscription">
+          <div class="l2">
+            <label>Prénom et nom<input name="nom" required maxlength="60"></label>
+            <label>Niveau<select name="niveau" required>
+              <option>2.0 – Débutant</option><option>2.5 – Débutant+</option><option selected>3.0 – Intermédiaire</option><option>3.5 – Intermédiaire+</option><option>4.0 – Avancé</option><option>4.5 – Avancé+</option><option>5.0 – Expert</option>
+            </select></label>
+          </div>
+          <div class="l2">
+            <label>Courriel<input type="email" name="courriel" required></label>
+            <label>Téléphone (facultatif)<input type="tel" name="tel"></label>
+          </div>
+          <label>Disponibilités<input name="dispo" placeholder="Ex. : mardi et jeudi soir"></label>
+          <label>Commentaires<textarea name="note" placeholder="Format préféré, partenaire, questions…"></textarea></label>
+          <button class="btn lime" type="submit">Envoyer mon inscription</button>
+          <p class="aide" style="margin:0">Le bouton ouvre votre logiciel de courriel avec le message déjà rempli : il ne reste qu'à l'envoyer.</p>
+        </form>
+      </div>
+      <div class="carte marine">
+        <div class="carte-tete"><h3>Comment ça marche</h3></div>
+        <ol style="padding-left:18px;margin:0;display:grid;gap:10px;color:#fff">
+          <li>Envoyez votre inscription avec votre niveau et vos disponibilités.</li>
+          <li>L'organisateur vous confirme votre place et vous ajoute à la liste des joueurs.</li>
+          <li>Consultez l'<a href="#horaire" style="color:var(--lime)">horaire</a> et venez jouer !</li>
+          <li>Vos résultats apparaissent dans le <a href="#resultats" style="color:var(--lime)">classement</a>.</li>
+        </ol>
+        <p id="insc-cotisation" style="margin:16px 0 0"></p>
+      </div>
+    </div>
+  </div></main>
+</div>
+
+<!-- ================= TOURNOIS ================= -->
+<div class="vue" id="v-tournois">
+  <div class="tete-page"><div class="t-logo"></div><div class="t-filet"></div><div class="conteneur"><h1>Tournois</h1><p>Les tournois de la ligue, à venir et passés.</p></div></div>
+  <main><div class="conteneur"><div class="grille2">
+    <div class="carte"><div class="carte-tete"><img src="assets/img/ic-calendrier.png" alt=""><h3>Tournois à venir</h3></div><div id="tournois-av"></div></div>
+    <div class="carte"><div class="carte-tete"><h3>🏆 Tournois passés</h3></div><div id="tournois-pa"></div></div>
+  </div></div></main>
+</div>
+
+<!-- ================= HORAIRE ================= -->
+<div class="vue" id="v-horaire">
+  <div class="tete-page"><div class="t-logo"></div><div class="t-filet"></div><div class="conteneur"><h1>Horaire</h1><p>Soirées de jeu, cliniques, tournois et activités sociales.</p></div></div>
+  <main><div class="conteneur">
+    <div class="carte" style="margin-bottom:20px" id="horaire-hab"></div>
+    <div class="grille2" style="grid-template-columns:1.4fr 1fr">
+      <div class="carte"><div class="carte-tete"><img src="assets/img/ic-calendrier.png" alt=""><h3>À venir</h3></div><div id="liste-evts"></div></div>
+      <div class="carte"><div class="carte-tete"><h3>Activités passées</h3></div><div id="liste-evts-passes"></div></div>
+    </div>
+  </div></main>
+</div>
+
+<!-- ================= RÉSULTATS ================= -->
+<div class="vue" id="v-resultats">
+  <div class="tete-page"><div class="t-logo"></div><div class="t-filet"></div><div class="conteneur"><h1>Résultats et classement</h1><p>Le classement de la saison se calcule à partir des résultats des matchs.</p></div></div>
+  <main><div class="conteneur">
+    <div class="grille2" style="grid-template-columns:1.3fr 1fr">
+      <div class="carte tableau">
+        <div class="carte-tete"><h3>Classement de la saison</h3></div>
+        <table><thead><tr><th>#</th><th>Joueur</th><th class="num">MJ</th><th class="num">V</th><th class="num">D</th><th class="num">%</th><th class="num">+/-</th><th class="num">Pts</th></tr></thead><tbody id="tb-classement"></tbody></table>
+        <p class="aide" style="margin:10px 0 0">2 points par victoire. Égalité départagée au pourcentage de victoires, puis au différentiel de points. MJ : matchs joués.</p>
+      </div>
+      <div class="carte"><div class="carte-tete"><h3>Matchs récents</h3></div><div id="liste-matchs" style="max-height:560px;overflow-y:auto"></div>
+        <p class="aide">Un résultat manque ? Envoyez-le à l'organisateur depuis la page <a href="#contact">Nous joindre</a>.</p></div>
+    </div>
+  </div></main>
+</div>
+
+<!-- ================= COMMUNAUTÉ ================= -->
+<div class="vue" id="v-communaute">
+  <div class="tete-page"><div class="t-logo"></div><div class="t-filet"></div><div class="conteneur"><h1>Communauté</h1><p>Jasez, trouvez des partenaires et découvrez les membres de la ligue.</p></div></div>
+  <main><div class="conteneur">
+    <h2 class="section-titre" style="margin-top:0">💬 Se parler entre joueurs</h2>
+    <div class="liens-com" id="liens-com"></div>
+    <div class="carte" id="forum-zone" style="margin-top:20px;display:none">
+      <div class="carte-tete"><h3>Forum de la ligue</h3></div>
+      <p class="aide" style="margin-top:0">Pour écrire, connectez-vous avec un compte GitHub (gratuit). Tout le monde peut lire.</p>
+      <div id="forum"></div>
+    </div>
+    <h2 class="section-titre">👥 Les joueurs</h2>
+    <div class="filtres">
+      <input type="search" id="q-joueur" placeholder="Rechercher un joueur…" aria-label="Rechercher un joueur">
+      <select id="q-niveau" aria-label="Filtrer par niveau"><option value="">Tous les niveaux</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <label style="display:flex;align-items:center;gap:6px;font-weight:500;color:var(--texte)"><input type="checkbox" id="q-cherche" style="width:auto"> Cherche un partenaire</label>
+    </div>
+    <div class="g3" id="liste-joueurs"></div>
+  </div></main>
+</div>
+
+<!-- ================= GALERIE ================= -->
+<div class="vue" id="v-galerie">
+  <div class="tete-page"><div class="t-logo"></div><div class="t-filet"></div><div class="conteneur"><h1>Galerie</h1><p>Les meilleurs moments de la ligue en photos.</p></div></div>
+  <main><div class="conteneur">
+    <div class="galerie" id="galerie"></div>
+    <p class="aide" style="margin-top:16px">Vous avez de belles photos d'un match ? Envoyez-les à l'organisateur depuis la page <a href="#contact">Nous joindre</a>.</p>
+  </div></main>
+</div>
+
+<!-- ================= FAQ ================= -->
+<div class="vue" id="v-faq">
+  <div class="tete-page"><div class="t-logo"></div><div class="t-filet"></div><div class="conteneur"><h1>Foire aux questions</h1><p>Tout ce qu'il faut savoir avant de sauter sur le terrain.</p></div></div>
+  <main><div class="conteneur" style="max-width:900px">
+    <details open><summary>Qu'est-ce que le pickleball ?</summary><div>Un sport de raquette qui combine des éléments du tennis, du badminton et du tennis de table. On joue avec une raquette pleine et une balle de plastique perforée, sur un terrain de la taille d'un terrain de badminton (20 × 44 pieds). Il se joue surtout en double, mais aussi en simple.</div></details>
+    <details><summary>Je n'ai jamais joué. Puis-je m'inscrire ?</summary><div>Absolument ! La ligue est ouverte à tous les niveaux, des grands débutants aux joueurs avancés. Indiquez votre niveau à l'inscription : on vous aidera à trouver des partenaires de votre calibre.</div></details>
+    <details><summary>Comment choisir mon niveau ?</summary><div><b>2.0–2.5</b> : vous apprenez les règles et les coups de base. <b>3.0–3.5</b> : vous maîtrisez le service et le retour, et commencez à jouer près de la cuisine (zone de non-volée). <b>4.0 et plus</b> : vous contrôlez les échanges courts (dinks), variez la vitesse et jouez stratégiquement. En cas de doute, choisissez le niveau inférieur.</div></details>
+    <details><summary>De quel équipement ai-je besoin ?</summary><div>Une raquette de pickleball, des souliers de sport adaptés au terrain (semelles qui ne marquent pas en gymnase) et des vêtements confortables. Pas encore de raquette ? Informez-vous auprès de l'organisateur.</div></details>
+    <details><summary>Comment se compte le pointage ?</summary><div>Une partie se joue habituellement en 11 points, et il faut gagner par 2 points d'écart. En double traditionnel, seule l'équipe au service peut marquer.</div></details>
+    <details><summary>Comment fonctionne le classement ?</summary><div>Après chaque match, le résultat est ajouté au site par l'organisateur. Chaque joueur de l'équipe gagnante reçoit 2 points. Les égalités sont départagées au pourcentage de victoires, puis au différentiel de points.</div></details>
+    <details><summary>Où et quand joue-t-on ? Combien ça coûte ?</summary><div id="faq-infos"></div></details>
+    <details><summary>Comment communiquer avec les autres joueurs ?</summary><div>Consultez la page <a href="#communaute">Communauté</a> : vous y trouverez les liens vers nos groupes de discussion et la liste des joueurs. Pour joindre l'organisateur, utilisez la page <a href="#contact">Nous joindre</a>.</div></details>
+  </div></main>
+</div>
+
+<!-- ================= NOUS JOINDRE ================= -->
+<div class="vue" id="v-contact">
+  <div class="tete-page"><div class="t-logo"></div><div class="t-filet"></div><div class="conteneur"><h1>Nous joindre</h1><p>Une question, un résultat à ajouter, des photos à partager ? Écrivez-nous.</p></div></div>
+  <main><div class="conteneur">
+    <div class="grille2">
+      <div class="carte"><div class="carte-tete"><img src="assets/img/ic-info.png" alt=""><h3>Coordonnées</h3></div><div class="coord" id="contact-infos"></div></div>
+      <div class="carte">
+        <div class="carte-tete"><img src="assets/img/ic-porte-voix.png" alt="" style="width:48px"><h3>Écrire à l'organisateur</h3></div>
+        <form class="f" id="f-contact">
+          <div class="l2"><label>Votre nom<input name="nom" required></label><label>Sujet<select name="sujet"><option>Question</option><option>Résultat de match</option><option>Photos</option><option>Suggestion</option><option>Autre</option></select></label></div>
+          <label>Message<textarea name="message" required placeholder="Pour un résultat : date, joueurs des deux équipes et pointage."></textarea></label>
+          <button class="btn" type="submit">Envoyer</button>
+          <p class="aide" style="margin:0">Le bouton ouvre votre logiciel de courriel avec le message déjà rempli.</p>
+        </form>
+      </div>
+    </div>
+  </div></main>
+</div>
+
+<!-- ================= BAS DE PAGE ================= -->
+<section class="banniere-img">
+  <img src="assets/img/banniere.jpg" width="1536" height="136" alt="Ensemble, faisons rayonner le pickleball à Gracefield ! — Gracefield, Québec">
+  <a class="zone z-fb s-fb" href="#contact" aria-label="Facebook"></a>
+  <a class="zone z-yt s-yt" href="#contact" aria-label="YouTube"></a>
+  <a class="zone z-mail" href="#contact" aria-label="Courriel"></a>
+  <a class="zone z-joindre" href="#contact" aria-label="Nous joindre"></a>
+</section>
+<section class="banniere-m">
+  <div class="slog">Ensemble, faisons rayonner le pickleball à Gracefield !</div>
+  <div class="actions">
+    <a class="social s-fb" href="#contact" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+    <a class="social s-yt" href="#contact" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
+    <a class="social" href="#contact" aria-label="Courriel"><svg><use href="#i-mail"/></svg></a>
+    <a class="pill lime" href="#contact">Nous joindre <svg><use href="#i-fleche"/></svg></a>
+  </div>
+</section>
+<footer class="pied"><div class="conteneur">
+  <nav aria-label="Liens du pied de page"><a href="#accueil">Accueil</a><a href="#apropos">À propos</a><a href="#inscription">Inscription</a><a href="#tournois">Tournois</a><a href="#horaire">Horaire</a><a href="#resultats">Résultats</a><a href="#galerie">Galerie</a><a href="#faq">FAQ</a><a href="#contact">Nous joindre</a></nav>
+  <span>© <span id="annee"></span> Ligue de Pickleball de Gracefield. Tous droits réservés.</span>
+</div></footer>
+
+<div id="visionneuse" role="dialog" aria-label="Photo agrandie"><div><img alt=""><p></p></div></div>
+<div id="toast" role="status"></div>
+
+<script src="donnees.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
